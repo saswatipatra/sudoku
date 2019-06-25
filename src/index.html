@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sudoku</title>
+  </head>
+  <body>
+    <div class="container">
+
+<div class="row" id="firstRow">
+  <div class="col card p-3 bg-light match" id="a0"></div>
+  <div class="col card p-3 bg-light match" id="a1"></div>
+  <div class="col card p-3 bg-light match borderright" id="a2"></div>
+
+  <div class="col card p-3 bg-light match" id="a3"></div>
+  <div class="col card p-3 bg-light match" id="a4"></div>
+  <div class="col card p-3 bg-light match borderright" id="a5"></div>
+
+  <div class="col card p-3 bg-light match" id="a6"></div>
+  <div class="col card p-3 bg-light match" id="a7"></div>
+  <div class="col card p-3 bg-light match" id="a8"></div>
+</div>
+
+<div class="row" id="secondRow">
+  <div class="col card p-3 bg-light match" id="b0"></div>
+  <div class="col card p-3 bg-light match" id="b1"></div>
+  <div class="col card p-3 bg-light match borderright" id="b2"></div>
+
+  <div class="col card p-3 bg-light match" id="b3"></div>
+  <div class="col card p-3 bg-light match" id="b4"></div>
+  <div class="col card p-3 bg-light match borderright" id="b5"></div>
+
+  <div class="col card p-3 bg-light match" id="b6"></div>
+  <div class="col card p-3 bg-light match" id="b7"></div>
+  <div class="col card p-3 bg-light match" id="b8"></div>
+</div>
+
+<div class="row linebottom" id="thirdRow">
+  <div class="col card p-3 bg-light match" id="c0"></div>
+  <div class="col card p-3 bg-light match" id="c1"></div>
+  <div class="col card p-3 bg-light match borderright" id="c2"></div>
+
+  <div class="col card p-3 bg-light match" id="c3"></div>
+  <div class="col card p-3 bg-light match" id="c4"></div>
+  <div class="col card p-3 bg-light match borderright" id="c5"></div>
+
+  <div class="col card p-3 bg-light match" id="c6"></div>
+  <div class="col card p-3 bg-light match" id="c7"></div>
+  <div class="col card p-3 bg-light match" id="c8"></div>
+</div>
+
+<div class="row" id="fourthRow">
+  <div class="col card p-3 bg-light match" id="d0"></div>
+  <div class="col card p-3 bg-light match" id="d1"></div>
+  <div class="col card p-3 bg-light match borderright" id="d2"></div>
+
+  <div class="col card p-3 bg-light match" id="d3"></div>
+  <div class="col card p-3 bg-light match" id="d4"></div>
+  <div class="col card p-3 bg-light match borderright" id="d5"></div>
+
+  <div class="col card p-3 bg-light match" id="d6"></div>
+  <div class="col card p-3 bg-light match" id="d7"></div>
+  <div class="col card p-3 bg-light match" id="d8"></div>
+</div>
+
+<div class="row" id="fifthRow">
+  <div class="col card p-3 bg-light match" id="e0"></div>
+  <div class="col card p-3 bg-light match" id="e1"></div>
+  <div class="col card p-3 bg-light match borderright" id="e2"></div>
+
+  <div class="col card p-3 bg-light match" id="e3"></div>
+  <div class="col card p-3 bg-light match" id="e4"></div>
+  <div class="col card p-3 bg-light match borderright" id="e5"></div>
+
+  <div class="col card p-3 bg-light match" id="e6"></div>
+  <div class="col card p-3 bg-light match" id="e7"></div>
+  <div class="col card p-3 bg-light match" id="e8"></div>
+</div>
+
+<div class="row linebottom" id="sixthRow">
+  <div class="col card p-3 bg-light match" id="f0"></div>
+  <div class="col card p-3 bg-light match" id="f1"></div>
+  <div class="col card p-3 bg-light match borderright" id="f2"></div>
+
+  <div class="col card p-3 bg-light match" id="f3"></div>
+  <div class="col card p-3 bg-light match" id="f4"></div>
+  <div class="col card p-3 bg-light match borderright" id="f5"></div>
+
+  <div class="col card p-3 bg-light match" id="f6"></div>
+  <div class="col card p-3 bg-light match" id="f7"></div>
+  <div class="col card p-3 bg-light match" id="f8"></div>
+</div>
+
+<div class="row" id="seventhRow">
+  <div class="col card p-3 bg-light match" id="g0"></div>
+  <div class="col card p-3 bg-light match" id="g1"></div>
+  <div class="col card p-3 bg-light match borderright" id="g2"></div>
+
+  <div class="col card p-3 bg-light match" id="g3"></div>
+  <div class="col card p-3 bg-light match" id="g4"></div>
+  <div class="col card p-3 bg-light match borderright" id="g5"></div>
+
+  <div class="col card p-3 bg-light match" id="g6"></div>
+  <div class="col card p-3 bg-light match" id="g7"></div>
+  <div class="col card p-3 bg-light match" id="g8"></div>
+</div>
+
+<div class="row" id="eighthRow">
+  <div class="col card p-3 bg-light match" id="h0"></div>
+  <div class="col card p-3 bg-light match" id="h1"></div>
+  <div class="col card p-3 bg-light match borderright" id="h2"></div>
+
+  <div class="col card p-3 bg-light match" id="h3"></div>
+  <div class="col card p-3 bg-light match" id="h4"></div>
+  <div class="col card p-3 bg-light match borderright" id="h5"></div>
+
+  <div class="col card p-3 bg-light match" id="h6"></div>
+  <div class="col card p-3 bg-light match" id="h7"></div>
+  <div class="col card p-3 bg-light match" id="h8"></div>
+</div>
+
+<div class="row" id="ninethRow">
+  <div class="col card p-3 bg-light match" id="i0"></div>
+  <div class="col card p-3 bg-light match" id="i1"></div>
+  <div class="col card p-3 bg-light match borderright" id="i2"></div>
+
+  <div class="col card p-3 bg-light match" id="i3"></div>
+  <div class="col card p-3 bg-light match" id="i4"></div>
+  <div class="col card p-3 bg-light match borderright" id="i5"></div>
+
+  <div class="col card p-3 bg-light match" id="i6"></div>
+  <div class="col card p-3 bg-light match" id="i7"></div>
+  <div class="col card p-3 bg-light match" id="i8"></div>
+</div>
+
+
+
+
+  </div>
+  </body>
+</html>

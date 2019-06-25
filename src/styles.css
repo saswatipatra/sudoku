@@ -1,0 +1,23 @@
+#output{
+  display: none;
+}
+
+
+body {
+  text-align: center;
+  margin-top:2%;
+  background-color: #FFDAD0;
+}
+
+.card {
+  height:125px;
+  font-size:80px;
+}
+
+.linebottom {
+  border-bottom: 3px solid black;
+}
+
+.borderright {
+  border-right: 3px solid black;
+}
